@@ -1,106 +1,79 @@
-"use client";
+"use client"
 
-import { TrendingUp } from "lucide-react";
-import { CartesianGrid, Line, LineChart, XAxis } from "recharts";
+import { useState, useEffect } from 'react'
+import { Line, LineChart } from "recharts"
+import { Button } from "@/components/ui/button"
+import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart"
 
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import {
-  ChartConfig,
-  ChartContainer,
-  ChartTooltip,
-  ChartTooltipContent,
-} from "@/components/ui/chart";
-import { Button } from "@/components/ui/button";
-import { useState } from "react";
-
-export const description = "A line chart";
-
-const chartData = [
-  { month: "January", desktop: 186 },
-  { month: "February", desktop: 305 },
-  { month: "March", desktop: 237 },
-  { month: "April", desktop: 73 },
-  { month: "May", desktop: 209 },
-  { month: "June", desktop: 214 },
-];
-
-
-
-const chartConfig = {
-  desktop: {
-    label: "Desktop",
-    color: "hsl(var(--chart-1))",
-  },
-} satisfies ChartConfig;
+// Define the shape of our data point
+interface DataPoint {
+  date: string
+  value: number
+}
 
 export function LineGraphTest() {
-  const [data, setData] = useState([
-    { month: "January", desktop: 186 },
-    { month: "February", desktop: 305 },
-    { month: "March", desktop: 237 },
-    { month: "April", desktop: 73 },
-    { month: "May", desktop: 209 },
-    { month: "June", desktop: 214 },
-  ]);
-  
-  function addData() {
-    setData((old) => [...old, { month: "July", desktop: 301 }]);
-    }
+  // Initialize state with some sample data
+  const [data, setData] = useState<DataPoint[]>([
+    { date: "Jan 2023", value: 400 },
+    { date: "Feb 2023", value: 300 },
+    { date: "Mar 2023", value: 600 },
+    { date: "Apr 2023", value: 800 },
+    { date: "May 2023", value: 500 },
+  ])
+
+  // Function to update the dataset
+  const updateData = () => {
+    const newData = data.map(item => ({
+      ...item,
+      value: Math.floor(Math.random() * 1000)
+    }))
+    setData(newData)
+  }
+
+  // Effect to simulate data updates (every 5 seconds)
+  useEffect(() => {
+    const interval = setInterval(() => {
+      updateData()
+    }, 5000)
+
+    return () => clearInterval(interval)
+  }, [])
 
   return (
-    <Card>
-      <CardHeader>
-        <CardTitle>Line Chart</CardTitle>
-        <CardDescription>January - June 2024</CardDescription>
-      </CardHeader>
-      <CardContent>
-        <Button onClick={addData} />
-        <ChartContainer config={chartConfig}>
-          <LineChart
-            accessibilityLayer
-            data={data}
-            margin={{
-              left: 12,
-              right: 12,
-            }}
-          >
-            <CartesianGrid vertical={false} />
-            <XAxis
-              dataKey="month"
-              tickLine={false}
-              axisLine={false}
-              tickMargin={8}
-              tickFormatter={(value) => value.slice(0, 3)}
-            />
-            <ChartTooltip
-              cursor={false}
-              content={<ChartTooltipContent hideLabel />}
-            />
-            <Line
-              dataKey="desktop"
-              type="natural"
-              stroke="var(--color-desktop)"
-              strokeWidth={2}
-              dot={false}
-            />
-          </LineChart>
-        </ChartContainer>
-      </CardContent>
-      <CardFooter className="flex-col items-start gap-2 text-sm">
-        <div className="flex gap-2 font-medium leading-none">
-          Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
-        </div>
-        <div className="leading-none text-muted-foreground">
-          Showing total visitors for the last 6 months
-        </div>
-      </CardFooter>
-    </Card>
-  );
+    <div className="w-full max-w-4xl mx-auto p-4">
+      <h2 className="text-2xl font-bold mb-4">Dynamic Line Chart</h2>
+      <ChartContainer
+        className="min-h-[400px]"
+        config={{
+          value: {
+            label: "Value",
+            color: "hsl(var(--chart-1))",
+          },
+        }}
+      >
+        <LineChart
+          accessibilityLayer
+          data={data}
+          margin={{
+            top: 20,
+            right: 20,
+            left: 20,
+            bottom: 20,
+          }}
+        >
+          <ChartTooltip content={<ChartTooltipContent />} />
+          <Line
+            type="monotone"
+            dataKey="value"
+            stroke="var(--color-value)"
+            strokeWidth={2}
+            dot={false}
+          />
+        </LineChart>
+      </ChartContainer>
+      <Button onClick={updateData} className="mt-4">
+        Update Data
+      </Button>
+    </div>
+  )
 }
