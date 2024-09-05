@@ -7,18 +7,18 @@ import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/
 
 // Define the shape of our data point
 interface DataPoint {
-  date: string
-  value: number
+    price: number
+  profit: number
 }
 
 export function LineGraphTest() {
   // Initialize state with some sample data
   const [data, setData] = useState<DataPoint[]>([
-    { date: "Jan 2023", value: 400 },
-    { date: "Feb 2023", value: 300 },
-    { date: "Mar 2023", value: 600 },
-    { date: "Apr 2023", value: 800 },
-    { date: "May 2023", value: 500 },
+    { price: 1, profit: 400 },
+    { price: 2, profit: 300 },
+    { price: 3, profit: 400 },
+    { price: 4, profit: 300 },
+    { price: 5, profit: 1 }
   ])
 
   // Function to update the dataset
@@ -29,15 +29,6 @@ export function LineGraphTest() {
     }))
     setData(newData)
   }
-
-  // Effect to simulate data updates (every 5 seconds)
-  useEffect(() => {
-    const interval = setInterval(() => {
-      updateData()
-    }, 5000)
-
-    return () => clearInterval(interval)
-  }, [])
 
   return (
     <div className="w-full max-w-4xl mx-auto p-4">
