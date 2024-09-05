@@ -1,0 +1,244 @@
+[
+    { "dbLetter": 121, "averagePrice": 0.0, "saturation": 0.1 },
+    {
+        "dbLetter": 123,
+        "averagePrice": 473.97040893418443,
+        "saturation": 1.1610310077621917
+    },
+    { "dbLetter": 120, "averagePrice": 6.54, "saturation": 0.1 },
+    {
+        "dbLetter": 124,
+        "averagePrice": 93.21619958851231,
+        "saturation": 1.221100587458696
+    },
+    {
+        "dbLetter": 125,
+        "averagePrice": 88.70736426390754,
+        "saturation": 1.4830617428803097
+    },
+    {
+        "dbLetter": 126,
+        "averagePrice": 132.22494901047534,
+        "saturation": 1.3563937245050774
+    },
+    { "dbLetter": 134, "averagePrice": 0.0, "saturation": 0.1 },
+    {
+        "dbLetter": 102,
+        "averagePrice": 12.099913432245588,
+        "saturation": 0.37811492181716516
+    },
+    {
+        "dbLetter": 103,
+        "averagePrice": 20.57887528988986,
+        "saturation": 0.291375003464502
+    },
+    {
+        "dbLetter": 108,
+        "averagePrice": 20.063235275194852,
+        "saturation": 0.9205104959080822
+    },
+    {
+        "dbLetter": 109,
+        "averagePrice": 161.34278396872443,
+        "saturation": 0.6772907908134423
+    },
+    {
+        "dbLetter": 110,
+        "averagePrice": 257.0337757487235,
+        "saturation": 0.773497189235052
+    },
+    { "dbLetter": 117, "averagePrice": 0.0, "saturation": 0.1 },
+    {
+        "dbLetter": 119,
+        "averagePrice": 46.34916056995211,
+        "saturation": 1.7037178595783466
+    },
+    {
+        "dbLetter": 57,
+        "averagePrice": 7292.228677535091,
+        "saturation": 1.2723277825347037
+    },
+    {
+        "dbLetter": 60,
+        "averagePrice": 54.117978049899776,
+        "saturation": 0.8387787060407896
+    },
+    {
+        "dbLetter": 61,
+        "averagePrice": 92.49138121074282,
+        "saturation": 0.5916826311773126
+    },
+    {
+        "dbLetter": 62,
+        "averagePrice": 62.15375041355659,
+        "saturation": 0.6818966610462884
+    },
+    {
+        "dbLetter": 63,
+        "averagePrice": 110.70854947753082,
+        "saturation": 0.6437675317721657
+    },
+    {
+        "dbLetter": 64,
+        "averagePrice": 164.65865386205544,
+        "saturation": 0.6458556587855219
+    },
+    {
+        "dbLetter": 65,
+        "averagePrice": 48.13037549643341,
+        "saturation": 0.7822030299056193
+    },
+    {
+        "dbLetter": 70,
+        "averagePrice": 1236.921336058189,
+        "saturation": 1.3950465456418102
+    },
+    {
+        "dbLetter": 3,
+        "averagePrice": 9.941784676566813,
+        "saturation": 1.279212265401115
+    },
+    {
+        "dbLetter": 4,
+        "averagePrice": 12.381956271639067,
+        "saturation": 1.0879621759051752
+    },
+    {
+        "dbLetter": 5,
+        "averagePrice": 14.233666191005737,
+        "saturation": 1.2178991950569666
+    },
+    {
+        "dbLetter": 7,
+        "averagePrice": 91.98938912716767,
+        "saturation": 1.214223985290546
+    },
+    {
+        "dbLetter": 8,
+        "averagePrice": 24.619521119919618,
+        "saturation": 1.0773016240468332
+    },
+    {
+        "dbLetter": 9,
+        "averagePrice": 4.423286876795894,
+        "saturation": 1.2712858272741585
+    },
+    {
+        "dbLetter": 71,
+        "averagePrice": 2257.2673568581704,
+        "saturation": 1.538914170207323
+    },
+    {
+        "dbLetter": 91,
+        "averagePrice": 98797.53102565804,
+        "saturation": 1.5781819553050556
+    },
+    {
+        "dbLetter": 94,
+        "averagePrice": 679084.3787861414,
+        "saturation": 1.5470972035588024
+    },
+    {
+        "dbLetter": 95,
+        "averagePrice": 193971.27591033207,
+        "saturation": 1.4274110937823452
+    },
+    {
+        "dbLetter": 96,
+        "averagePrice": 72027.35543876051,
+        "saturation": 1.5286407554350863
+    },
+    {
+        "dbLetter": 97,
+        "averagePrice": 32810.53970337832,
+        "saturation": 1.8876507379702192
+    },
+    {
+        "dbLetter": 98,
+        "averagePrice": 1663.826285844622,
+        "saturation": 0.6222619572027422
+    },
+    {
+        "dbLetter": 99,
+        "averagePrice": 51486.62426944676,
+        "saturation": 1.479792268358398
+    },
+    {
+        "dbLetter": 11,
+        "averagePrice": 60.28890804204755,
+        "saturation": 1.1791301578282658
+    },
+    {
+        "dbLetter": 12,
+        "averagePrice": 58.733944967862925,
+        "saturation": 1.2587442727456994
+    },
+    {
+        "dbLetter": 24,
+        "averagePrice": 1002.1430660598352,
+        "saturation": 0.7852121122822514
+    },
+    {
+        "dbLetter": 25,
+        "averagePrice": 1804.1713140610696,
+        "saturation": 0.5778570946150211
+    },
+    {
+        "dbLetter": 26,
+        "averagePrice": 2128.6702077204777,
+        "saturation": 0.6130901354337422
+    },
+    {
+        "dbLetter": 27,
+        "averagePrice": 1091.6612984481164,
+        "saturation": 0.3716212040094115
+    },
+    {
+        "dbLetter": 28,
+        "averagePrice": 1575.87836324716,
+        "saturation": 0.40227792660153633
+    },
+    {
+        "dbLetter": 53,
+        "averagePrice": 4304.233026780459,
+        "saturation": 1.3127434979519006
+    },
+    {
+        "dbLetter": 54,
+        "averagePrice": 10136.093537810137,
+        "saturation": 1.264745729145571
+    },
+    {
+        "dbLetter": 55,
+        "averagePrice": 3192.6497664409803,
+        "saturation": 1.2538194660566224
+    },
+    {
+        "dbLetter": 56,
+        "averagePrice": 7526.751751424055,
+        "saturation": 1.2724529839035223
+    },
+    { "dbLetter": 67, "averagePrice": 12.511970236169525, "saturation": 0.1 },
+    {
+        "dbLetter": 122,
+        "averagePrice": 99.74776618897054,
+        "saturation": 2.6545369281396813
+    },
+    {
+        "dbLetter": 127,
+        "averagePrice": 469.23769814986525,
+        "saturation": 1.7218476506241032
+    },
+    { "dbLetter": 129, "averagePrice": 0.0, "saturation": 0.1 },
+    { "dbLetter": 130, "averagePrice": 0.0, "saturation": 0.1 },
+    { "dbLetter": 131, "averagePrice": 0.0, "saturation": 0.1 },
+    { "dbLetter": 132, "averagePrice": 0.0, "saturation": 0.1 },
+    {
+        "dbLetter": 140,
+        "averagePrice": 222.77749311759086,
+        "saturation": 1.7763582943693723
+    },
+    { "dbLetter": 142, "averagePrice": 0.0, "saturation": 0.1 },
+    { "dbLetter": 143, "averagePrice": 0.0, "saturation": 0.1 },
+    { "dbLetter": 144, "averagePrice": 21.27396987780619, "saturation": 0.1 }
+]

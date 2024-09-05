@@ -1,0 +1,32 @@
+{
+    "AVERAGE_SALARY": 345,
+    "REALM_PHASE_START": 0,
+    "REALM_PHASE_FASHION": 1,
+    "SALARY_MID": { "0": 670, "1": 700, "2": 730 },
+    "ROBOT_COST": 940,
+    "SALES": {
+        "G": [
+            3, 4, 5, 7, 8, 9, 67, 119, 123, 124, 125, 126, 122, 127, 140, 144
+        ],
+        "A": [11, 12],
+        "C": [24, 25, 26, 27, 28, 98],
+        "2": [53, 54, 55, 56, 57],
+        "H": [60, 61, 62, 63, 64, 65, 70, 71],
+        "B": [91, 94, 95, 96, 97, 99],
+        "d": [102, 103, 108, 109, 110],
+        "r": [
+            117, 121, 134, 122, 119, 123, 129, 130, 131, 142, 143, 132, 124,
+            125, 126
+        ]
+    },
+    "PURCHASE_SIMBOOSTS_FEE": 0.1,
+    "PRODUCTION_SPEED_MODIFIER_DAYS": 21,
+    "PRODUCTION_SPEED_MODIFIER_RESOURCES": 3,
+    "PRODUCTION_SPEED_MODIFIER_FIRST_DAY": 0,
+    "LAUNCH_QUEUE_MAX": 30,
+    "TUTORIAL_BONUS": 12000,
+    "PROFIT_PER_BUILDING_LEVEL": 500,
+    "RETAIL_MODELING_QUALITY_WEIGHT": 0.3,
+    "TUTORIAL_APPLES_QUANTITY": 50,
+    "TUTORIAL_APPLES_RETAIL_PRICE": 8
+}
