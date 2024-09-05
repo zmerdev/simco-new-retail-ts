@@ -110,7 +110,7 @@ export function profitPerHour(
     acceleration:number,
     buildingLevel:number
 ) {
-    let uph = unitsPerHourSold(
+    const uph = unitsPerHourSold(
         typedRetailData[econ][itemId],
         salesSpeedBonus,
         sellPrice,
@@ -120,9 +120,9 @@ export function profitPerHour(
         buildingLevel
     )
 
-    let revenuePerUnit = sellPrice - (storeBaseSalary * actualAdmin) / uph
-    let profitPerUnit = revenuePerUnit - costPerUnit
-    let profitPerHour = profitPerUnit * uph
+    const revenuePerUnit = sellPrice - (storeBaseSalary * actualAdmin) / uph
+    const profitPerUnit = revenuePerUnit - costPerUnit
+    const profitPerHour = profitPerUnit * uph
     return profitPerHour
 }
 //units sold per hour
@@ -170,7 +170,7 @@ function secondsToSell(
     return secondsLessAccel - (secondsLessAccel * salesSpeedBonus) / 100
 }
 function baseSecondsToSell(e:RetailData, t:number, r:number, i:number, n:number) {
-    var g, f, y, w
+    let g, f, y, w
     const a = Math.min(Math.max(2 - r, 0), 2),
         s = a / 2 + 0.5,
         l = t / 12,
